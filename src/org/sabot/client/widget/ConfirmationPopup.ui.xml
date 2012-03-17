@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://google-web-toolkit.googlecode.com/files/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:g='urn:import:com.google.gwt.user.client.ui'
+			 xmlns:sc='urn:import:org.sabot.client.widget'>
+    <ui:style>
+    	.mainPanel {
+    		padding: 10px;
+    	}
+    	.actionText {
+    		padding: 5px;
+    	}
+    	.buttonLeft {
+    		padding: 5px;
+    		float: left;
+    	}
+    	.buttonRight {
+    		padding: 5px;
+    		float: right;
+    	}
+    </ui:style>			 
+			 
+	<g:HTMLPanel styleName="{style.mainPanel}">
+		<g:Label ui:field="actionText" styleName="{style.actionText}"/>
+		<g:HTMLPanel>
+			<sc:ImageButton ui:field="confirmButton" styleName="{style.buttonLeft}"/>
+			<sc:ImageButton ui:field="cancelButton" styleName="{style.buttonRight}"/>
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

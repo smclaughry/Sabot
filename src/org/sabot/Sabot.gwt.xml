@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='Sabot'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+
+  <!-- Other module inherits                                      -->
+  <inherits name="com.flipthebird.GwtHashCodeEquals"/>
+  <inherits name="com.google.gwt.place.Place" /> 
+  <inherits name="com.google.gwt.activity.Activity" /> 
+  <inherits name='com.google.gwt.inject.Inject' />
+  <inherits name="com.google.gwt.uibinder.UiBinder"/>
+  <inherits name="com.google.gwt.resources.Resources" />
+  <inherits name="com.googlecode.objectify.Objectify" />
+  <inherits name="com.googlecode.gchart.GChart" />
+  <inherits name='com.google.gwt.language.Language' />
+  
+  <inherits name="com.google.gwt.i18n.CldrLocales"/>
+  <inherits name='com.bradrydzewski.gwt.calendar.Calendar' />
+  <inherits name='com.bradrydzewski.gwt.calendar.theme.google.Google' />
+  <inherits name='com.allen_sauer.gwt.dnd.gwt-dnd'/>
+  <inherits name='com.google.api.gwt.oauth2.OAuth2' />
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+</module>

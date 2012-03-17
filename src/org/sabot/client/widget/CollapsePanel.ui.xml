@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.title{
+			float: left;
+		}
+		.img{
+			float: left;
+			height: 15px;
+			width: 15px;
+		}
+		.header{
+			padding-bottom: 20px;
+		}
+		.headerPanel{
+			cursor: pointer;
+		}
+		.contents{
+			padding-left: 15px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<h3 class="{style.header}">
+			<g:FocusPanel ui:field="titlePanel">
+				<g:FlowPanel styleName="{style.headerPanel}">
+					<g:Image ui:field="expandArrow" url="/img/double_arrow_down_icon.jpg" styleName="{style.img}"/>
+					<g:Image ui:field="collapseArrow" url="/img/double_arrow_right_icon.jpg" styleName="{style.img}" visible="false"/>
+					<g:HTML ui:field="panelTitle" styleName="{style.title}"/>
+				</g:FlowPanel>
+			</g:FocusPanel>
+		</h3>
+		<g:FlowPanel ui:field="contents" styleName="{style.contents}"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

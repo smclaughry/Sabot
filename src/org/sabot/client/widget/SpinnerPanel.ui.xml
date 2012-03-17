@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://google-web-toolkit.googlecode.com/files/xhtml.ent">
+<!--
+/*
+ * Library Sabot: a library for accelerating GWT and AppEngine development
+ * 
+ * Copyright (C) 2011  Phil Craven, Stephen McLaughry
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */ 
+ -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:g='urn:import:com.google.gwt.user.client.ui'
+			 xmlns:datepicker='urn:import:com.google.gwt.user.datepicker.client'>
+	
+	<ui:style>
+		.processingSpinner {
+		    width:100%;	
+		    height:90px;
+		    min-width:121px;
+		    background: transparent url(/images/ajax-loader.gif) no-repeat center center;
+		    margin:30px 0;
+		}
+	</ui:style>
+	<g:FlowPanel ui:field="mainPanel">
+		<g:HTML ui:field="spinner" visible="false" styleName="{style.processingSpinner}"/>
+		<g:FlowPanel ui:field="childHolder"/>
+	</g:FlowPanel>
+</ui:UiBinder>
